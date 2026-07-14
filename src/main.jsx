@@ -1,19 +1,10 @@
-import { Box, Typography } from "@mui/material";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
 
-export default function Footer() {
-  return (
-    <Box
-      sx={{
-        mt: 5,
-        p: 3,
-        bgcolor: "#111",
-        color: "white",
-        textAlign: "center",
-      }}
-    >
-      <Typography>
-        © 2026 Luxe Cosmetics
-      </Typography>
-    </Box>
-  );
-}
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
